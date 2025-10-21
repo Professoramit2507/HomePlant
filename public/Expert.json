@@ -1,0 +1,23 @@
+[
+  {
+    "expertId": 1,
+    "name": "Ariana Bloom",
+    "specialization": "Indoor Plant Care Specialist",
+    "experience": "8 years",
+    "image": "https://i.ibb.co/jkymLqzS/download-11.jpg"
+  },
+  {
+    "expertId": 2,
+    "name": "Liam Greenfield",
+    "specialization": "Botanist & Fertilizer Expert",
+    "experience": "10 years",
+    "image": "https://i.ibb.co/TBHJ87SV/download-12.jpg"
+  },
+  {
+    "expertId": 3,
+    "name": "Sophia Leafson",
+    "specialization": "Succulent & Cactus Care Advisor",
+    "experience": "6 years",
+    "image": "https://i.ibb.co/CdJZds5/download-13.jpg"
+  }
+]

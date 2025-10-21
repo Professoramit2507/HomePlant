@@ -1,0 +1,23 @@
+[
+  {
+    "tipId": 1,
+    "category": "Watering",
+    "title": "Water Only When Needed",
+    "description": "Check the soil before watering. Most indoor plants prefer slightly dry soil between waterings.",
+    "icon": "https://i.ibb.co/gbLLNwGZ/download-14.jpg"
+  },
+  {
+    "tipId": 2,
+    "category": "Sunlight",
+    "title": "Find the Right Light Spot",
+    "description": "Place your plants in bright, indirect sunlight to keep leaves healthy and vibrant.",
+    "icon": "https://i.ibb.co/MxCXLFPd/download-15.jpg"
+  },
+  {
+    "tipId": 3,
+    "category": "Fertilizing",
+    "title": "Feed Monthly During Growth",
+    "description": "Use a balanced liquid fertilizer once a month during spring and summer.",
+    "icon": "https://i.ibb.co/0jywvN16/download-16.jpg"
+  }
+]
