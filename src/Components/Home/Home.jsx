@@ -2,8 +2,10 @@ import React, { Suspense } from 'react';
 import {motion} from 'framer-motion'
 import { Link, useLoaderData } from 'react-router';
 import HomeData from '../HomeData/HomeData';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Home = () => {
+
     const homeData = useLoaderData()
     console.log(homeData)
     return (
@@ -11,6 +13,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.5 }}>
+              
+
 
             <h1 className='text-2xl font-bold text-center py-5'>This is <span className='text-green-600'>Home </span></h1>
            

@@ -13,11 +13,13 @@ const HomeData = ({ homeData }) => {
         <h3 className="card-title">Price : {homeData.price}</h3>
         <h3 className="card-title">Rating : {homeData.rating}</h3>
         <p>
-          {homeData.description}
+          {homeData.description
+            .split(" ") 
+            .slice(0, 8) 
+            .join(" ") + "..."}
         </p>
         <div className="card-actions flex justify-center">
-                 <button className="btn btn-soft btn-primary">View Details</button>
-           
+          <button className="btn btn-soft btn-primary">View Details</button>
         </div>
       </div>
     </div>
