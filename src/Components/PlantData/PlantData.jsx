@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const PlantData = ({ planData }) => {
   return (
@@ -18,7 +19,9 @@ const PlantData = ({ planData }) => {
             .join(" ") + "..."}{" "}
         </p>
         <div className="card-actions flex justify-center">
-          <button className="btn btn-soft btn-primary">View Details</button>
+          <Link to={`/card_details/${planData.Id}`}>
+              <button className="btn btn-soft btn-primary">View Details</button>
+          </Link>
         </div>
       </div>
     </div>

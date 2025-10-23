@@ -9,6 +9,8 @@ import Expart from "../Components/Expart/Expart";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import AuthLayout from "../Components/Layout/AuthLayout";
+import CardDetails from "../Pages/CardDetails";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -66,6 +68,20 @@ const router = createBrowserRouter([
       },
       
     ],
+  },
+  {
+    path:"/card_details/:id",
+    element:<PrivateRoute>
+      <CardDetails></CardDetails>
+    </PrivateRoute>,
+    loader:() => fetch('/Home_Plants.json')
+  },
+   {
+    path:"/card_details/:id",
+    element:<PrivateRoute>
+      <CardDetails></CardDetails>
+    </PrivateRoute>,
+    loader:() => fetch('/Plant_Plants.json')
   },
 
   {

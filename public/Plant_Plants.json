@@ -1,6 +1,6 @@
 [
   {
-    "plantId": 1,
+    "Id": 1,
     "plantName": "Snake Plant",
     "category": "Air Purifier",
     "price": 18,
@@ -12,7 +12,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "plantId": 2,
+    "Id": 2,
     "plantName": "Peace Lily",
     "category": "Flowering Plant",
     "price": 22,
@@ -24,7 +24,7 @@
     "providerName": "Leafy Luxe"
   },
   {
-    "plantId": 3,
+    "Id": 3,
     "plantName": "Spider Plant",
     "category": "Air Purifier",
     "price": 14,
@@ -36,7 +36,7 @@
     "providerName": "GreenScape"
   },
   {
-    "plantId": 4,
+    "Id": 4,
     "plantName": "Aloe Vera",
     "category": "Succulent",
     "price": 12,
@@ -48,7 +48,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "plantId": 5,
+    "Id": 5,
     "plantName": "Fiddle Leaf Fig",
     "category": "Flowering Plant",
     "price": 45,
@@ -60,7 +60,7 @@
     "providerName": "Botanic Bay"
   },
   {
-    "plantId": 6,
+    "Id": 6,
     "plantName": "Monstera Deliciosa",
     "category": "Flowering Plant",
     "price": 38,
@@ -72,7 +72,7 @@
     "providerName": "GreenNest"
   },
   {
-    "plantId": 7,
+    "Id": 7,
     "plantName": "ZZ Plant",
     "category": "Succulent",
     "price": 20,
@@ -84,7 +84,7 @@
     "providerName": "Plantify"
   },
   {
-    "plantId": 8,
+    "Id": 8,
     "plantName": "Boston Fern",
     "category": "Succulent",
     "price": 16,
@@ -96,7 +96,7 @@
     "providerName": "Leafy Luxe"
   },
   {
-    "plantId": 9,
+    "Id": 9,
     "plantName": "Jade Plant",
     "category": "Succulent",
     "price": 15,
@@ -108,7 +108,7 @@
     "providerName": "Botanic Bay"
   },
   {
-    "plantId": 10,
+    "Id": 10,
     "plantName": "Areca Palm",
     "category": "Succulent",
     "price": 40,
@@ -120,7 +120,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "plantId": 11,
+    "Id": 11,
     "plantName": "Pothos Golden",
     "category": "Flowering Plant",
     "price": 13,
@@ -132,7 +132,7 @@
     "providerName": "GreenNest"
   },
   {
-    "plantId": 12,
+    "Id": 12,
     "plantName": "Rubber Plant",
     "category": "Air Purifier",
     "price": 32,
