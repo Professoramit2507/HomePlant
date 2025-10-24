@@ -7,7 +7,7 @@ const HomeData = ({ homeData }) => {
   return (
     <div className="card bg-base-100 w-96 shadow-sm border ">
       <figure>
-        <img className="object-cover w-70" src={homeData.image} alt="plant" />
+        <img className="object-cover w-60" src={homeData.image} alt="plant" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{homeData.plantName}</h2>

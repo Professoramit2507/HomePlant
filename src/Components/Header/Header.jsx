@@ -1,4 +1,4 @@
-import React, { useContext } from "react"; // useContext ব্যবহার করতে হবে use এর পরিবর্তে
+import React, { useContext, useState } from "react";
 import logoImg from "../../assets/img/images (2).jpg";
 import userImg from "../../assets/img/user.png";
 import { Link } from "react-router";
@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLogout = () => {
     logOut()
@@ -27,92 +28,108 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm w-11/12 mx-auto">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+      <nav className="bg-base-100 shadow-sm w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16">
+            <div className="flex items-center">
+              <Link to="/home" className="flex items-center space-x-2">
+                <img className="w-10 h-10" src={logoImg} alt="Logo" />
+                <span className="font-bold text-xl text-green-700">
+                  GreenNest
+                </span>
+              </Link>
             </div>
 
-            <div className="">{user && user.email}</div>
-            <ul
-              tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <Link to="/home">
-                  <span className="btn btn-primary">Home</span>
+            <div className="hidden lg:flex lg:items-center lg:space-x-4">
+              <Link to="/home" className="btn btn-success px-4 text-white">
+                Home
+              </Link>
+              <Link to="/plants" className="btn btn-info px-4 text-white">
+                Plants
+              </Link>
+              <Link to="/profile" className="btn btn-accent px-4 text-white">
+                My Profile
+              </Link>
+            </div>
+
+            <div className="flex items-center space-x-2">
+              <img
+                className="w-10 h-10 rounded-full"
+                src={userImg}
+                alt="User"
+              />
+
+              {user ? (
+                <button
+                  onClick={handleLogout}
+                  className="btn btn-primary px-4 text-sm"
+                >
+                  LogOut
+                </button>
+              ) : (
+                <Link to="/auth/login" className="btn btn-primary px-4 text-sm">
+                  Login
                 </Link>
-              </li>
-              <li>
-                <Link to="/plants">Plants</Link>
-              </li>
-              <li>
-                <Link to="/profile">My Profile</Link>
-              </li>
-            </ul>
-          </div>
+              )}
 
-          <div className="flex">
-            <img className="w-10" src={logoImg} alt="" />
-            <Link to="/home" className="btn btn-ghost text-xl">
-              GreenNest
-            </Link>
+              <div className="lg:hidden">
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-200"
+                >
+                  <svg
+                    className="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    {isMenuOpen ? (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    ) : (
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    )}
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link to="/home">
-                <span className="btn btn-success">Home</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/plants">
-                <span className="btn btn-info">Plant</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/profile">
-                <span className="btn btn-accent">My Profile</span>
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="navbar-end flex gap-2">
-          <img className="w-10 " src={userImg} alt="" />
-
-          {user ? (
-            <button
-              onClick={handleLogout}
-              className="btn btn-primary px-8 text-[16px]"
+        {isMenuOpen && (
+          <div className="lg:hidden px-2 pt-2 pb-3 space-y-1">
+            <Link
+              to="/home"
+              className="block px-3 py-2 rounded-md text-base font-medium bg-green-100 hover:bg-green-200"
             >
-              LogOut
-            </button>
-          ) : (
-            <Link to="/auth/login" className="btn btn-primary px-8 text-[16px]">
-              Login
+              Home
             </Link>
-          )}
-        </div>
-      </div>
+            <Link
+              to="/plants"
+              className="block px-3 py-2 rounded-md text-base font-medium bg-blue-100 hover:bg-blue-200"
+            >
+              Plants
+            </Link>
+            <Link
+              to="/profile"
+              className="block px-3 py-2 rounded-md text-base font-medium bg-purple-100 hover:bg-purple-200"
+            >
+              My Profile
+            </Link>
+          </div>
+        )}
+      </nav>
 
-     
       <ToastContainer />
     </>
   );

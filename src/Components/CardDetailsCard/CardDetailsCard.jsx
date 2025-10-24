@@ -24,7 +24,7 @@ const CardDetailsCard = ({ card }) => {
         <div className="card bg-base-100 mx-auto shadow-sm border">
           <figure>
             <img
-              className="w-[400px] h-[350px] object-cover"
+              className="w-[200px] h-[350px] object-cover"
               src={card.image}
             />
           </figure>
