@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+    "id": 1,
     "plantName": "Snake Plant",
     "category": "Air Purifier",
     "price": 18,
@@ -12,7 +12,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "Id": 2,
+    "id": 2,
     "plantName": "Peace Lily",
     "category": "Flowering Plant",
     "price": 22,
@@ -24,7 +24,7 @@
     "providerName": "Leafy Luxe"
   },
   {
-    "Id": 3,
+    "id": 3,
     "plantName": "Spider Plant",
     "category": "Air Purifier",
     "price": 14,
@@ -36,7 +36,7 @@
     "providerName": "GreenScape"
   },
   {
-    "Id": 4,
+    "id": 4,
     "plantName": "Aloe Vera",
     "category": "Succulent",
     "price": 12,
@@ -48,7 +48,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "Id": 5,
+    "id": 5,
     "plantName": "Fiddle Leaf Fig",
     "category": "Flowering Plant",
     "price": 45,
@@ -60,7 +60,7 @@
     "providerName": "Botanic Bay"
   },
   {
-    "Id": 6,
+    "id": 6,
     "plantName": "Monstera Deliciosa",
     "category": "Flowering Plant",
     "price": 38,

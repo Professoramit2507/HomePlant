@@ -6,6 +6,7 @@ import CardTips from "../Tips/CardTips";
 
 const Plants = () => {
   const plantData = useLoaderData();
+  //console.log('plantdata 12 ta:',plantData)
 
   return (
     <motion.div
@@ -23,8 +24,8 @@ const Plants = () => {
         fallback={<span className="block text-center">Loading...</span>}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 mx-auto py-5">
-          {plantData.map((plant) => (
-            <PlantData key={plant.id} planData={plant} />
+          {plantData.map((plantData) => (
+            <PlantData key={plantData.id} planData={plantData} />
           ))}
         </div>
       </Suspense>

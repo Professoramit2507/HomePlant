@@ -1,6 +1,6 @@
 [
   {
-    "Id": 1,
+    "id": 1,
     "plantName": "Snake Plant",
     "category": "Air Purifier",
     "price": 18,
@@ -12,7 +12,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "Id": 2,
+    "id": 2,
     "plantName": "Peace Lily",
     "category": "Flowering Plant",
     "price": 22,
@@ -24,7 +24,7 @@
     "providerName": "Leafy Luxe"
   },
   {
-    "Id": 3,
+    "id": 3,
     "plantName": "Spider Plant",
     "category": "Air Purifier",
     "price": 14,
@@ -36,7 +36,7 @@
     "providerName": "GreenScape"
   },
   {
-    "Id": 4,
+    "id": 4,
     "plantName": "Aloe Vera",
     "category": "Succulent",
     "price": 12,
@@ -48,7 +48,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "Id": 5,
+    "id": 5,
     "plantName": "Fiddle Leaf Fig",
     "category": "Flowering Plant",
     "price": 45,
@@ -60,7 +60,7 @@
     "providerName": "Botanic Bay"
   },
   {
-    "Id": 6,
+    "id": 6,
     "plantName": "Monstera Deliciosa",
     "category": "Flowering Plant",
     "price": 38,
@@ -72,7 +72,7 @@
     "providerName": "GreenNest"
   },
   {
-    "Id": 7,
+    "id": 7,
     "plantName": "ZZ Plant",
     "category": "Succulent",
     "price": 20,
@@ -84,7 +84,7 @@
     "providerName": "Plantify"
   },
   {
-    "Id": 8,
+    "id": 8,
     "plantName": "Boston Fern",
     "category": "Succulent",
     "price": 16,
@@ -96,7 +96,7 @@
     "providerName": "Leafy Luxe"
   },
   {
-    "Id": 9,
+    "id": 9,
     "plantName": "Jade Plant",
     "category": "Succulent",
     "price": 15,
@@ -108,7 +108,7 @@
     "providerName": "Botanic Bay"
   },
   {
-    "Id": 10,
+    "id": 10,
     "plantName": "Areca Palm",
     "category": "Succulent",
     "price": 40,
@@ -120,7 +120,7 @@
     "providerName": "UrbanGreen Studio"
   },
   {
-    "Id": 11,
+    "id": 11,
     "plantName": "Pothos Golden",
     "category": "Flowering Plant",
     "price": 13,
@@ -132,7 +132,7 @@
     "providerName": "GreenNest"
   },
   {
-    "Id": 12,
+    "id": 12,
     "plantName": "Rubber Plant",
     "category": "Air Purifier",
     "price": 32,
