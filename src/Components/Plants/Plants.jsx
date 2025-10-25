@@ -9,12 +9,12 @@ const Plants = () => {
   //console.log('plantdata 12 ta:',plantData)
 
   return (
-    <motion.div
+    <motion.div 
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -50 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen px-4"
+      className="min-h-screen px-4 bg-white"
     >
       <h1 className="text-3xl font-bold text-center py-6">
         This is <span className="text-green-600">Plant</span>

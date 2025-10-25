@@ -13,6 +13,7 @@ import CardDetails from "../Pages/CardDetails";
 import PrivateRoute from "../Provider/PrivateRoute";
 import ForgotPasswordPage from "../Components/ForgotPasswordPage/ForgotPasswordPage";  // <-- Import ভুলে যেও না
 import Error from "../Components/Error/Error";
+import Slide from "../Components/Slide/Slide";
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,12 @@ const router = createBrowserRouter([
 
       return [...homeData, ...plantData];
     },
+  },
+
+  {
+    path:'slide',
+    element:<Slide></Slide>,
+    loader:() => fetch("/Home_Plants.json")
   },
 
   {

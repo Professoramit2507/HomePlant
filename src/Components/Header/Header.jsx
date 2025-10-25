@@ -6,9 +6,13 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
+
+
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   const handleLogout = () => {
     logOut()
@@ -28,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-base-100 shadow-sm w-full">
+      <nav className="bg-[#e9f6ea] shadow-sm w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
@@ -128,7 +132,9 @@ const Header = () => {
             </Link>
           </div>
         )}
+        <div></div>
       </nav>
+    
 
       <ToastContainer />
     </>
