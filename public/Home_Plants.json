@@ -46,29 +46,5 @@
     "description": "Aloe Vera is a succulent plant cherished for both its healing properties and decorative beauty. Known for its thick, fleshy leaves filled with soothing gel, it’s perfect for treating minor burns, skin irritation, and dryness. Aloe thrives in bright, indirect sunlight and requires minimal watering, making it a low-maintenance choice for indoor gardens. Beyond its medicinal uses, Aloe Vera enhances indoor aesthetics with its modern, clean look. Whether placed on a windowsill, desk, or kitchen counter, this versatile plant adds a refreshing touch of greenery and promotes a calm, healthy home environment.",
     "image": "https://i.ibb.co/gZ6vnYb0/download-1.jpg",
     "providerName": "UrbanGreen Studio"
-  },
-  {
-    "id": 5,
-    "plantName": "Fiddle Leaf Fig",
-    "category": "Flowering Plant",
-    "price": 45,
-    "rating": 4.3,
-    "availableStock": 8,
-    "careLevel": "Hard",
-    "description": "The Fiddle Leaf Fig is a statement indoor plant adored for its large, glossy violin-shaped leaves. Perfect for modern interiors, it instantly elevates any room with its bold and architectural appearance. This plant thrives in bright, indirect sunlight and needs consistent watering to keep the soil slightly moist but not soggy. While it can be a little finicky, the visual payoff is worth the effort. The Fiddle Leaf Fig purifies air while serving as a natural focal point. When cared for properly, it grows tall and majestic, adding sophistication to your living space.",
-    "image": "https://i.ibb.co/yBBXCnXm/download-2.jpg",
-    "providerName": "Botanic Bay"
-  },
-  {
-    "id": 6,
-    "plantName": "Monstera Deliciosa",
-    "category": "Flowering Plant",
-    "price": 38,
-    "rating": 4.9,
-    "availableStock": 12,
-    "careLevel": "Medium",
-    "description": "Monstera Deliciosa, also known as the Swiss Cheese Plant, is beloved for its dramatic split leaves and tropical elegance. It thrives in bright, indirect light and appreciates occasional misting to maintain humidity. This plant grows fast and can reach impressive sizes indoors, making it perfect for large living areas. Its air-purifying abilities help improve indoor quality while bringing a natural, jungle-like vibe to your space. With minimal care, Monstera creates an exotic yet calming environment that reflects both beauty and vitality, making it one of the most sought-after indoor plants today.",
-    "image": "https://i.ibb.co/xqTDgBjZ/download-3.jpg",
-    "providerName": "GreenNest"
   }
 ]

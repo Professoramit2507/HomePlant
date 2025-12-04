@@ -6,8 +6,7 @@ import CardTips from "../Tips/CardTips";
 
 const Plants = () => {
   const plantData = useLoaderData();
-  //console.log('plantdata 12 ta:',plantData)
-
+  
   return (
     <motion.div 
       initial={{ opacity: 0, y: 50 }}
@@ -17,28 +16,26 @@ const Plants = () => {
       className="min-h-screen px-4 bg-white"
     >
       <h1 className="text-3xl font-bold text-center py-6">
-        This is <span className="text-green-600">Plant</span>
+        Discover <span className="text-green-600">Plants</span>
       </h1>
 
-      <Suspense
-        fallback={<span className="block text-center">Loading...</span>}
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 mx-auto py-5">
-          {plantData.map((plantData) => (
-            <PlantData key={plantData.id} planData={plantData} />
+      <Suspense fallback={<span className="block text-center">Loading...</span>}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  w-11/12 mx-auto">
+          {plantData.map((plant) => (
+            <PlantData key={plant.id} planData={plant} />
           ))}
         </div>
       </Suspense>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-10 mb-10">
         <Link to="/CardTips">
-          <button className="btn btn-neutral text-sm font-semibold w-full sm:w-auto">
+          <button className="btn btn-neutral text-sm font-semibold w-full sm:w-auto py-3 px-6 rounded-md transition-all duration-300 hover:bg-neutral-600 hover:text-white">
             Click for Card Tips
           </button>
         </Link>
 
         <Link to="/expert">
-          <button className="btn btn-accent text-sm font-semibold w-full sm:w-auto">
+          <button className="btn btn-accent text-sm font-semibold w-full sm:w-auto py-3 px-6 rounded-md transition-all duration-300 hover:bg-accent-600 hover:text-white">
             Our Expert
           </button>
         </Link>

@@ -5,7 +5,7 @@ const PlantData = ({ planData }) => {
   
   console.log('plantdata 12 ta:',planData)
   return (
-    <div className="card bg-[#f5f7f4] w-96 border shadow-sm ">
+    <div className="card bg-[#f5f7f4] w-96 shadow-sm ">
       <figure>
         <img className="object-cover w-60" src={planData.image} />
       </figure>
